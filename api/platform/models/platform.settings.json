@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "platforms",
+  "info": {
+    "name": "Platform"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "pathname": {
+      "type": "uid",
+      "required": true
+    },
+    "position": {
+      "required": true,
+      "type": "integer"
+    }
+  }
+}
