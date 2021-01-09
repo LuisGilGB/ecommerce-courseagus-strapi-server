@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "games",
   "info": {
-    "name": "Game"
+    "name": "Game",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -54,7 +55,7 @@
     "releaseDate": {
       "type": "date"
     },
-    "gameSpecificSummary": {
+    "platformSpecificSummary": {
       "type": "text"
     }
   }
