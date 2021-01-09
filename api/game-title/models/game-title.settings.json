@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "platforms",
+  "collectionName": "game_titles",
   "info": {
-    "name": "Platform"
+    "name": "Game Title"
   },
   "options": {
     "increments": true,
@@ -10,20 +10,15 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "name": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "pathname": {
-      "type": "uid",
-      "required": true
-    },
-    "position": {
-      "required": true,
-      "type": "integer"
+    "summary": {
+      "type": "text"
     },
     "games": {
-      "via": "platform",
+      "via": "game_title",
       "collection": "game"
     }
   }

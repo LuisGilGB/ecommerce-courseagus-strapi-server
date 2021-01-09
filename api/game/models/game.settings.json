@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "games",
+  "info": {
+    "name": "Game"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "game_title": {
+      "model": "game-title",
+      "via": "games"
+    },
+    "platform": {
+      "model": "platform",
+      "via": "games"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "discount": {
+      "type": "integer",
+      "max": 100,
+      "min": 0,
+      "default": 0
+    },
+    "boxImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "pathname": {
+      "type": "uid"
+    },
+    "screenshots": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "video": {
+      "type": "string"
+    },
+    "releaseDate": {
+      "type": "date"
+    },
+    "gameSpecificSummary": {
+      "type": "text"
+    }
+  }
+}
