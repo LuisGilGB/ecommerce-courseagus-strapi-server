@@ -12,12 +12,10 @@
   },
   "attributes": {
     "game_title": {
-      "model": "game-title",
-      "via": "games"
+      "model": "game-title"
     },
     "platform": {
-      "model": "platform",
-      "via": "games"
+      "model": "platform"
     },
     "price": {
       "type": "decimal"

@@ -16,10 +16,6 @@
     },
     "summary": {
       "type": "text"
-    },
-    "games": {
-      "via": "game_title",
-      "collection": "game"
     }
   }
 }
